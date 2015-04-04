@@ -16,7 +16,7 @@ if ($_POST['type'] == "pixel") {
 
 header('Content-Type: image/png');
 
-imagepng($im,"images/test.png");
+imagepng($im,"images/".$_POST['name'].".png");
 imagedestroy($im);
 // do something with $im
 
